@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title></title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/glitch.css" rel="stylesheet">
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    <style>
+    @font-face {
+    font-family: bebenuas;
+    src: url("./fonts/BebasNeue.otf");
+    }
+    .paddingExtra
+    {
+    	/*padding: 2px;*/
+    	min-height: 150px;
+    	/*max-width: 300px;*/
+    	/*margin-left: 5px;*/
+    	transition: 1s ease-in-out;
+    	background-color: white;
+    	text-align:center;
+    	
+    }
+    .paddingExtra:hover{
+    	background-color: black;
+    	color: white;
+    	/*transform: rotateY(180deg);*/
+    }
+    .test{
+      transition: 1s ease-in-out;
+    }
+    .test:hover{
+      width: 100%;
+    }
+    .musicButton{
+    	line-height: 150px;
+    	/*margin-bottom: 5px;*/
+    	/*display: block;*/
+    	vertical-align: middle;
+    }
+    /*body{
+    	background:#0fffff;
+    }*/
+    p{
+      font-family: bebenuas;
+    	font-size: 60px;
+    }
+    html, body {
+    height: 100%;
+    }
+  .container-fluid {
+    height: 100%;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    }
+  .body-film {
+    height: 100%;
+    overflow-y: auto; // a value of 'scroll' will force scrollbars, even if they aren't necessary. This is cleaner.
+    background-color: fadeout(@studio-bar-color, @studio-body-film-trans-delta);
+  }
+  .block-film {
+    min-height: 100%;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    background-color: fadeout(@studio-bar-color, @studio-block-film-trans-delta);   
+  }
+  .flexTest{
+    display:flex;
+  }
+    </style>
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<div class="container-fluid" style="min-height:100%;min-width:100%;">
+<div class="row musicButton flexTest">
+  <div class="col-sm-4 paddingExtra test"><p>Equalizer</p></div>
+  <div class="col-sm-4 paddingExtra test"><p>Play</p></div>
+  <div class="col-sm-4 paddingExtra test"><p>Queue/List</p></div>
+</div>
+<div class="row musicButton">
+  <div class="col-lg-4 paddingExtra" id="volControl"><p>Volume Controls</p></div>
+  <div class="col-lg-4 paddingExtra"><p>Play / Pause</p></div>
+  <div class="col-lg-4 paddingExtra"><p>Current Song Here</p></div>
+</div>
+<div class="row musicButton">
+  <div class="col-sm-4 paddingExtra"><p>Stop</p></div>
+  <div class="col-sm-4 paddingExtra"><p>Shuffle</p></div>
+  <div class="col-sm-4 paddingExtra"><p>Loop ( Symbols )</p></div>
+</div>
+<div class="row musicButton">
+  <div class="col-sm-12 paddingExtra"><p>Player Goes Here (Duration)</p></div>
+</div>
+</div>
+</body>
+</html>

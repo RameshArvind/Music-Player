@@ -12,4 +12,9 @@ $("#volControl").mouseleave(function(){
 		$(this).fadeIn();
 	});
 });
+$(".paddingExtra").click(function(){
+	console.log("clicked")
+	$(this).children("p").css("opacity","0.4");
+	$(this).children("p").animate({"opacity":"1.0"},400);
+});
 });

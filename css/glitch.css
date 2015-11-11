@@ -12,9 +12,9 @@
     
     .glitch:after {
       animation: glitch-animation 2s infinite linear alternate-reverse;
-      background: black;
+      background: white;
       clip: rect( 0, 900px, 0, 0 );
-      color: white;
+      color: black;
       content: attr( data-text );
       left: 2px;
       overflow: hidden;
@@ -24,9 +24,9 @@
     }
     .glitch:before {
       animation: glitch-animation-2 3s infinite linear alternate-reverse;
-      background: black;
+      background: white;
       clip: rect( 0, 900px, 0, 0 );
-      color: white;
+      color: black;
       content: attr( data-text );
       left: -2px;
       overflow: hidden;

@@ -1,4 +1,8 @@
 <html>
+<!-- 
+1.Disable text selections
+2.Allow adding youtube playlists/links for audio
+ -->
 <head>
 	<title></title>
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -26,10 +30,10 @@
     	color: white;
     	/*transform: rotateY(180deg);*/
     }
-    .test{
+    .expandOnHover{
       transition: 1s ease-in-out;
     }
-    .test:hover{
+    .expandOnHover:hover{
       width: 100%;
     }
     .musicButton{
@@ -71,9 +75,9 @@
 <body>
 <div class="container-fluid" style="min-height:100%;min-width:100%;">
 <div class="row musicButton flexTest">
-  <div class="col-sm-4 paddingExtra test"><p>Equalizer</p></div>
-  <div class="col-sm-4 paddingExtra test"><p>Play</p></div>
-  <div class="col-sm-4 paddingExtra test"><p>Queue/List</p></div>
+  <div class="col-sm-4 paddingExtra expandOnHover"><p>Equalizer</p></div>
+  <div class="col-sm-4 paddingExtra expandOnHover"><p>Play</p></div>
+  <div class="col-sm-4 paddingExtra expandOnHover"><p>Queue(URLS)</p></div>
 </div>
 <div class="row musicButton">
   <div class="col-lg-4 paddingExtra" id="volControl"><p>Volume Controls</p></div>
